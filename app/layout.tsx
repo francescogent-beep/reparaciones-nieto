@@ -1,5 +1,8 @@
 import React from 'react';
-import { ClientLayout } from '@/src/components/layout/ClientLayout';
+import { Header } from '@/src/components/layout/Header';
+import { Footer } from '@/src/components/layout/Footer';
+import { StickyCTA } from '@/src/components/layout/StickyCTA';
+import { Location } from '@/src/components/sections/Location';
 import { business } from '@/src/lib/business';
 import '../src/index.css';
 
@@ -49,14 +52,20 @@ export default function RootLayout({
 
   return (
     <html lang="es" suppressHydrationWarning>
-      <body suppressHydrationWarning className="min-h-screen flex flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
-        <ClientLayout>
+      </head>
+      <body suppressHydrationWarning className="min-h-screen flex flex-col bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
+        <Header />
+        <main className="flex-grow">
           {children}
-        </ClientLayout>
+        </main>
+        <Location />
+        <Footer />
+        <StickyCTA />
       </body>
     </html>
   );

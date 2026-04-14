@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { business } from '@/src/lib/business';
