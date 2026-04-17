@@ -63,7 +63,7 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-3xl shadow-xl border border-gray-100 max-w-xs hidden sm:block">
                   <p className="text-gray-600 italic leading-relaxed">
-                    "La profesionalidad no es negociable. Cada persiana que arreglamos es nuestra carta de presentación."
+                    "La profesionalidad no es negociable. Cada reparación que hacemos es nuestra carta de presentación."
                   </p>
                   <p className="mt-4 font-bold text-gray-900">— Fundador de Reparaciones Nieto</p>
                 </div>
