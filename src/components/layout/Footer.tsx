@@ -86,6 +86,17 @@ export const Footer = () => {
             <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
           </div>
         </div>
+
+        <div className="mt-6 text-center text-xs text-gray-400">
+          <a
+            href="https://fgdigitalsystems.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            WEB DESIGN &amp; SEO BY FG DIGITAL SYSTEMS
+          </a>
+        </div>
       </div>
     </footer>
   );
