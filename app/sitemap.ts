@@ -3,12 +3,13 @@ import { business } from '@/src/lib/business';
 import { blogPosts } from '@/src/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://reparacionesnieto.com';
+  const baseUrl = 'https://persianas-y-fontaneria.com';
 
   // Static routes
   const staticRoutes = [
     '',
     '/servicios',
+    '/galeria',
     '/preguntas-frecuentes',
     '/sobre-nosotros',
     '/contacto',

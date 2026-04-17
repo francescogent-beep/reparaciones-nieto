@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://reparacionesnieto.com/sitemap.xml',
+    sitemap: 'https://persianas-y-fontaneria.com/sitemap.xml',
   };
 }

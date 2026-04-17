@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Descubre cómo proteger tus persianas del sol intenso y el salitre de Alicante para que duren muchos años más.",
     date: "2024-03-15",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/udiEXk7.png",
+    image: "/reparaciones-nieto-instalaciones-1.jpeg",
     category: "Persianas",
     serviceId: "persianas",
     content: `
@@ -97,7 +97,7 @@ No esperes a que la persiana se rompa por completo. Un pequeño ajuste a tiempo 
     excerpt: "Aprende cómo elegir y utilizar tus persianas para mantener tu casa fresca en el verano alicantino sin abusar del aire acondicionado.",
     date: "2024-03-20",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/dQccUae.png",
+    image: "/reparaciones-nieto-instalaciones-2.jpeg",
     category: "Persianas",
     serviceId: "persianas-hogar",
     content: `
@@ -164,7 +164,7 @@ Si notas que tu casa es un horno, quizás el problema no sea tu aparato de refri
     excerpt: "Protege tu local comercial en Alicante con la tecnología más avanzada en cierres de seguridad. Analizamos las ventajas de la automatización.",
     date: "2024-03-25",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/c2lWsa5.jpeg",
+    image: "/reparaciones-nieto-instalaciones-3.jpeg",
     category: "Cierres Metálicos",
     serviceId: "cierres-metalicos",
     content: `
@@ -223,7 +223,7 @@ Si tu cierre se atasca o quieres modernizarlo, [llámanos](/contacto). Realizamo
     excerpt: "El salitre es el peor enemigo de los metales. Aprende cómo realizar un mantenimiento efectivo para tus cierres comerciales cerca del mar.",
     date: "2024-03-30",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/ENNkyHz.png",
+    image: "/Cierre-metal.jpeg",
     category: "Cierres Metálicos",
     serviceId: "cierres-metalicos",
     content: `
@@ -278,7 +278,7 @@ El mantenimiento preventivo en zonas de costa es un seguro para tu negocio. En *
     excerpt: "Alicante tiene una de las aguas más duras de España. Descubre cómo proteger tus electrodomésticos y tuberías de las incrustaciones de cal.",
     date: "2024-04-05",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/PU6QaKY.png",
+    image: "/fontaneria-reparaciones-nieto.jpeg",
     category: "Fontanería",
     serviceId: "fontaneria",
     content: `
@@ -330,7 +330,7 @@ Una inversión en tratamiento de agua se amortiza rápido. Si necesitas un [font
     excerpt: "Una fuga invisible puede ser una pesadilla. Aprende a detectar señales tempranas y cómo actuamos los profesionales en Alicante.",
     date: "2024-04-10",
     author: "Equipo Reparaciones Nieto",
-    image: "https://i.imgur.com/PU6QaKY.png",
+    image: "/fontaneria-reparaciones-nieto.jpeg",
     category: "Fontanería",
     serviceId: "fontaneria",
     content: `

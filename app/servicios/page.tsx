@@ -36,6 +36,18 @@ export default function ServicesPage() {
               <div className="flex-1 space-y-4">
                 <h2 className="text-2xl font-bold text-gray-900">{service.title}</h2>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                {!!service.subservices?.length && (
+                  <div className="flex flex-wrap gap-2">
+                    {service.subservices.map((item) => (
+                      <span
+                        key={item}
+                        className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <ul className="space-y-2">
                   <li className="flex items-center space-x-2 text-sm text-gray-700">
                     <CheckCircle2 className="w-4 h-4 text-green-500" />

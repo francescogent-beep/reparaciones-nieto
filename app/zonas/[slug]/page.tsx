@@ -28,7 +28,7 @@ export default async function AreaDetailPage({ params }: Props) {
 
   if (!areaName) notFound();
   
-  const areaImage = (business as any).areaImages?.[slug] || `https://picsum.photos/seed/${slug}/1200/600`;
+  const areaImage = business.areaImages[slug] || business.galleryImages[0].src;
 
   return (
     <section className="py-20 bg-gray-50">

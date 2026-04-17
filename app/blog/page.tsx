@@ -30,7 +30,7 @@ export default function BlogPage() {
         "@type": "Person",
         "name": post.author
       },
-      "url": `https://reparacionesnieto.com/blog/${post.slug}`
+      "url": `https://persianas-y-fontaneria.com/blog/${post.slug}`
     }))
   };
 

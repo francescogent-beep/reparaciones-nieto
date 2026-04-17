@@ -78,6 +78,7 @@ export const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs">
           <p suppressHydrationWarning>© {new Date().getFullYear()} Reparaciones Nieto. Todos los derechos reservados.</p>
           <div className="flex space-x-6">
+            <Link href="/galeria" className="hover:text-white transition-colors">Galería</Link>
             <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
             <Link href="/preguntas-frecuentes" className="hover:text-white transition-colors">FAQ</Link>
             <Link href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</Link>

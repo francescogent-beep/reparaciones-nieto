@@ -68,7 +68,9 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 text-blue-600 shrink-0" />
                   <div>
                     <p className="font-bold text-gray-900">Email</p>
-                    <p className="text-gray-600">{business.email}</p>
+                    <a href={`mailto:${business.email}`} className="text-gray-600 hover:text-blue-600 transition-colors">
+                      {business.email}
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -77,12 +79,13 @@ export default function ContactPage() {
 
           <div className="bg-white rounded-[2.5rem] shadow-xl border border-gray-100 overflow-hidden h-full min-h-[500px]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.846543123456!2d-0.4845!3d38.3578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDIxJzI4LjEiTiAwwrAyOScwNC4yIlc!5e0!3m2!1ses!2ses!4v1615890000000!5m2!1ses!2ses" 
+              src={business.mapsEmbedUrl}
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen={true} 
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
               title="Ubicación Reparaciones Nieto"
             ></iframe>
           </div>

@@ -2,10 +2,12 @@ import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { blogPosts } from '@/src/lib/blog';
+import { business } from '@/src/lib/business';
 import { getMetadata } from '@/src/lib/seo';
-import { Calendar, User, ArrowLeft, Share2, Clock, Quote } from 'lucide-react';
+import { Calendar, ArrowLeft, Clock, Quote } from 'lucide-react';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
+import { NativeShareButton } from '@/src/components/blog/NativeShareButton';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -45,12 +47,12 @@ export default async function BlogPostPage({ params }: Props) {
       "name": "Reparaciones Nieto",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://reparacionesnieto.com/logo.png"
+        "url": `${business.siteUrl}${business.logo}`
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://reparacionesnieto.com/blog/${post.slug}`
+      "@id": `https://persianas-y-fontaneria.com/blog/${post.slug}`
     }
   };
 
@@ -62,19 +64,19 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://reparacionesnieto.com"
+        "item": "https://persianas-y-fontaneria.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://reparacionesnieto.com/blog"
+        "item": "https://persianas-y-fontaneria.com/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://reparacionesnieto.com/blog/${post.slug}`
+        "item": `https://persianas-y-fontaneria.com/blog/${post.slug}`
       }
     ]
   };
@@ -203,9 +205,10 @@ export default async function BlogPostPage({ params }: Props) {
         <footer className="mt-20 pt-10 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between space-y-6 sm:space-y-0">
           <div className="flex items-center space-x-4">
             <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Compartir:</span>
-            <button className="p-2 rounded-full bg-gray-50 text-gray-400 hover:text-blue-600 hover:bg-blue-50 transition-all">
-              <Share2 className="w-5 h-5" />
-            </button>
+            <NativeShareButton
+              title={post.title}
+              url={`${business.siteUrl}/blog/${post.slug}`}
+            />
           </div>
           <div className="flex items-center space-x-4">
             <Link 

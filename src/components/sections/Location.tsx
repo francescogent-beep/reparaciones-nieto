@@ -1,8 +1,17 @@
+'use client';
+
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { business } from '@/src/lib/business';
 
 export const Location = () => {
+  const pathname = usePathname();
+
+  if (pathname === '/contacto') {
+    return null;
+  }
+
   return (
     <section className="py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +62,7 @@ export const Location = () => {
 
           <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 h-[450px]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.665248900112!2d-0.48041190000000006!3d38.3567293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x49e53b2f37cc333b%3A0xca0e26e43f43d3b2!2sReparaciones%20Nieto%20-%20Fontanero%20Alicante!5e0!3m2!1sen!2ses!4v1776090518412!5m2!1sen!2ses" 
+              src={business.mapsEmbedUrl}
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

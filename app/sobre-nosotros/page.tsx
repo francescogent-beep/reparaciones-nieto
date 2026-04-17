@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { getMetadata } from '@/src/lib/seo';
+import { business } from '@/src/lib/business';
 import { Award, Clock, Shield, Users, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = getMetadata(
@@ -54,7 +55,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
                   <img 
-                    src="https://picsum.photos/seed/team/800/1000" 
+                    src={business.teamImage}
                     alt="Equipo Reparaciones Nieto" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

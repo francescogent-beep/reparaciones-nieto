@@ -26,6 +26,7 @@ export const Header = () => {
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-8 items-center">
             <Link href="/servicios" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Servicios</Link>
+            <Link href="/galeria" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Galería</Link>
             <Link href="/blog" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Blog</Link>
             <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">FAQ</Link>
             <Link href="/sobre-nosotros" className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">Sobre Nosotros</Link>
@@ -56,6 +57,9 @@ export const Header = () => {
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 p-2"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
+              aria-label={isMenuOpen ? 'Cerrar menu de navegacion' : 'Abrir menu de navegacion'}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -65,8 +69,9 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 py-4 px-4 space-y-4 shadow-lg animate-in fade-in slide-in-from-top-4 duration-200">
+        <div id="mobile-navigation" className="md:hidden bg-white border-t border-gray-100 py-4 px-4 space-y-4 shadow-lg animate-in fade-in slide-in-from-top-4 duration-200">
           <Link href="/servicios" className="block text-base font-medium text-gray-900 px-2" onClick={() => setIsMenuOpen(false)}>Servicios</Link>
+          <Link href="/galeria" className="block text-base font-medium text-gray-900 px-2" onClick={() => setIsMenuOpen(false)}>Galería</Link>
           <Link href="/blog" className="block text-base font-medium text-gray-900 px-2" onClick={() => setIsMenuOpen(false)}>Blog</Link>
           <Link href="/preguntas-frecuentes" className="block text-base font-medium text-gray-900 px-2" onClick={() => setIsMenuOpen(false)}>Preguntas Frecuentes</Link>
           <Link href="/sobre-nosotros" className="block text-base font-medium text-gray-900 px-2" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>

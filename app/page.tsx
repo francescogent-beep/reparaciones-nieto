@@ -29,7 +29,7 @@ export default function Home() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://reparacionesnieto.com"
+        "item": "https://persianas-y-fontaneria.com"
       }
     ]
   };
@@ -44,7 +44,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex items-center pt-12 pb-20 sm:pt-20 sm:pb-32 overflow-hidden bg-gray-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://i.imgur.com/ZEqLipq.png" 
+            src={business.heroImage}
             alt="Handyman background" 
             className="w-full h-full object-cover opacity-30"
             referrerPolicy="no-referrer"
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="hidden lg:block relative">
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform rotate-2 border-4 border-white/10">
                 <img 
-                  src="https://i.imgur.com/ZEqLipq.png" 
+                  src={business.heroImage}
                   alt="Reparaciones Nieto Alicante" 
                   className="w-full h-auto object-cover"
                   referrerPolicy="no-referrer"

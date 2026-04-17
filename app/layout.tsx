@@ -15,10 +15,12 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Plumber",
     "name": "Reparaciones Nieto",
-    "image": "https://i.imgur.com/ZEqLipq.png",
-    "@id": "https://reparacionesnieto.com",
-    "url": "https://reparacionesnieto.com",
-    "telephone": business.phone,
+    "image": `${business.siteUrl}${business.heroImage}`,
+    "logo": `${business.siteUrl}${business.logo}`,
+    "@id": business.siteUrl,
+    "url": business.siteUrl,
+    "telephone": business.phoneFormatted,
+    "email": business.email,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle del Dr. Bergez, 16",
@@ -28,8 +30,8 @@ export default function RootLayout({
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 38.3567293,
-      "longitude": -0.4804119
+      "latitude": business.geo.latitude,
+      "longitude": business.geo.longitude
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -46,8 +48,9 @@ export default function RootLayout({
       "closes": "23:59"
     },
     "sameAs": [
-      "https://www.google.com/maps?cid=14559646464534534534"
-    ]
+      business.mapsUrl
+    ],
+    "hasMap": business.mapsUrl
   };
 
   return (
