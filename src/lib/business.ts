@@ -126,7 +126,7 @@ export const business = {
       seoTitle: "Fontanero Urgente en Alicante",
       seoDescription: "Atención urgente de fontanería en Alicante para fugas, reboses, averías imprevistas y problemas que no pueden esperar.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-fontanero-urgente.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -137,7 +137,7 @@ export const business = {
       seoTitle: "Desatascos de Desagües, Fregadero y WC en Alicante",
       seoDescription: "Desatascos en Alicante para fregaderos, desagües y WC con diagnóstico del origen y solución profesional.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-atasco.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -148,7 +148,7 @@ export const business = {
       seoTitle: "Reparación de Fugas de Agua en Alicante",
       seoDescription: "Localización y reparación de fugas de agua en Alicante para viviendas, baños, cocinas y locales comerciales.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-fuga-agua.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -159,7 +159,7 @@ export const business = {
       seoTitle: "Problemas de Baja Presión de Agua en Alicante",
       seoDescription: "Solucionamos baja presión de agua en Alicante revisando grifos, llaves, filtros, cal y rendimiento del circuito.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-baja-presion.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -170,7 +170,7 @@ export const business = {
       seoTitle: "Reparación de Grifos que Gotean en Alicante",
       seoDescription: "Reparación de grifos que gotean en Alicante, con revisión de cierres, cartuchos, juntas y pérdidas de agua.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-grifo.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -181,7 +181,7 @@ export const business = {
       seoTitle: "Problemas con Calentador y Agua Caliente en Alicante",
       seoDescription: "Revisión y solución de fallos de calentador, termo y agua caliente en Alicante con diagnóstico técnico.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-calentador.jpeg",
       parentServiceId: "fontaneria",
     },
     {
@@ -192,8 +192,150 @@ export const business = {
       seoTitle: "Reparación de Cisterna y WC Averiado en Alicante",
       seoDescription: "Reparación de cisternas y WC averiados en Alicante, incluyendo mecanismos de descarga, llenado y pérdidas.",
       icon: "Droplets",
-      image: "/fontaneria-reparaciones-nieto.jpeg",
+      image: "/service-cisterna-wc.jpeg",
       parentServiceId: "fontaneria",
     }
   ]
+};
+
+export const zonePageContent: Record<string, {
+  intro: string[];
+  highlights: string[];
+  closingNote: string;
+}> = {
+  "alicante": {
+    intro: [
+      "Alicante capital es donde Reparaciones Nieto tiene su base de operaciones, lo que nos permite llegar a cualquier barrio de la ciudad —desde el Casco Antiguo hasta Carolinas, Benalúa, Mercado Central o los bloques de la Playa de San Juan— en un tiempo medio de 20 a 30 minutos. Llevamos más de 15 años resolviendo averías de persianas, cierres metálicos y fontanería en edificios residenciales, locales comerciales y comunidades de propietarios de toda la ciudad.",
+      "En Alicante capital, el ambiente marino y los vientos de levante aceleran el deterioro de las lamas de aluminio y los mecanismos metálicos. Las persianas que dan a fachadas exteriores o a terrazas en zonas como El Puerto o Santa Cruz sufren especialmente la corrosión del salitre. Por eso nuestras reparaciones incluyen siempre una revisión del estado general del conjunto, no solo la pieza que ha fallado.",
+      "Para fontanería, el agua dura de Alicante —con índices de cal entre los más altos de España— afecta directamente a grifos, termos, calentadores y conducciones. Somos el fontanero de confianza de muchas comunidades y familias alicantinas que han comprobado que una revisión preventiva sale mucho más barata que una reparación de urgencia.",
+    ],
+    highlights: [
+      "Cobertura total de todos los barrios de Alicante ciudad",
+      "Tiempo de llegada medio: 20–30 minutos",
+      "Especialistas en edificios con persianas de cajón empotrado",
+      "Experiencia con comunidades de vecinos y administradores de fincas",
+      "Servicio de fontanería para agua dura: descalcificadores, filtros y mantenimiento",
+    ],
+    closingNote: "Si estás en Alicante y tienes una persiana atascada, un cierre que no abre o una fuga de agua, llámanos ahora. Tenemos técnicos disponibles 24 horas.",
+  },
+  "elche": {
+    intro: [
+      "Elche es la segunda ciudad más grande de la provincia de Alicante y una de las zonas de mayor actividad comercial e industrial de la Comunidad Valenciana. Los polígonos industriales de Carrús, La Rata y Torrellano concentran centenares de naves y locales con cierres metálicos que requieren mantenimiento periódico y reparación urgente cuando se produce una avería. Reparaciones Nieto atiende Elche con desplazamiento desde Alicante capital en un tiempo aproximado de 20 minutos.",
+      "En el tejido residencial de Elche —barrios como El Pla, El Toscar, Altabix o las urbanizaciones del norte—, la reparación de persianas domésticas es uno de los servicios más demandados, especialmente en inmuebles de los años 80 y 90 donde los mecanismos ya dan señales de desgaste. Cambiamos cintas, sustituimos lamas rotas y reparamos ejes con piezas de calidad y sin necesidad de obra.",
+      "En fontanería, Elche comparte con Alicante el problema del agua calcárea, que deteriora los grifos y provoca averías recurrentes en calentadores y termos. Nuestros fontaneros en Elche ofrecen diagnóstico rápido y soluciones duraderas tanto para particulares como para empresas.",
+    ],
+    highlights: [
+      "Atención en todos los barrios residenciales e industriales de Elche",
+      "Especialistas en cierres metálicos para naves y locales comerciales",
+      "Tiempo de llegada aproximado: 20 minutos desde Alicante",
+      "Reparación de persianas en viviendas de los años 80 y 90",
+      "Fontanería para agua dura: grifos, calentadores y tuberías",
+    ],
+    closingNote: "¿Necesitas un persianista o fontanero en Elche? Llámanos o escríbenos por WhatsApp y te atendemos de inmediato.",
+  },
+  "benidorm": {
+    intro: [
+      "Benidorm es uno de los destinos turísticos más activos de España, con decenas de miles de apartamentos, hoteles y locales que necesitan un mantenimiento constante de sus instalaciones. Las persianas y cierres metálicos en Benidorm tienen un ciclo de uso muy intensivo —se accionan varias veces al día, todos los días del año— y el ambiente costero con alta concentración de sal acelera enormemente la corrosión de los componentes metálicos.",
+      "Reparaciones Nieto se desplaza a Benidorm para reparaciones urgentes y trabajos programados. En hoteles y apartamentos turísticos, una persiana bloqueada o un cierre de local que no abre supone una pérdida económica directa. Nuestro equipo actúa con rapidez, discreción y limpieza para minimizar el impacto en la actividad del negocio.",
+      "Para comunidades de propietarios de apartamentos en Benidorm, ofrecemos contratos de mantenimiento preventivo que garantizan el buen estado de persianas y cierres durante toda la temporada. En fontanería, atendemos fugas, atascos y averías urgentes tanto en viviendas de temporada como en establecimientos hoteleros.",
+    ],
+    highlights: [
+      "Servicio urgente para hoteles, apartamentos y locales turísticos",
+      "Experiencia con persianas y cierres en ambiente costero con salitre",
+      "Contratos de mantenimiento para comunidades de propietarios",
+      "Discreción y limpieza garantizadas en intervenciones en establecimientos abiertos",
+      "Fontanería urgente para viviendas vacacionales y negocios de hostelería",
+    ],
+    closingNote: "¿Tienes una avería en Benidorm y necesitas solución rápida? Llámanos ahora — estamos operativos 24 horas, 365 días al año.",
+  },
+  "el-campello": {
+    intro: [
+      "El Campello es un municipio costero situado a apenas 13 kilómetros al norte de Alicante, con una mezcla de vivienda habitual y segunda residencia que genera una demanda constante de servicios de reparación y mantenimiento. La proximidad al mar hace que las persianas y cierres metálicos en El Campello estén especialmente expuestos al salitre, lo que provoca oxidación prematura en guías, lamas y mecanismos.",
+      "Reparaciones Nieto llega a El Campello en aproximadamente 20 minutos desde nuestra base en Alicante. Atendemos tanto a residentes permanentes como a propietarios de segunda vivienda que detectan una avería al abrir su casa al inicio de la temporada: persianas agarrotadas, cintas rotas o cierres de garaje que no responden.",
+      "En fontanería, El Campello tiene zonas con presión de agua irregular, especialmente en urbanizaciones elevadas. Diagnosticamos y resolvemos problemas de baja presión, fugas en conducciones y averías en calentadores con la misma rapidez que en Alicante capital.",
+    ],
+    highlights: [
+      "Llegada en aproximadamente 20 minutos desde Alicante",
+      "Reparación de persianas dañadas por salitre y ambiente marino",
+      "Atención a segunda residencia: apertura de temporada y revisiones",
+      "Fontanería para urbanizaciones con problemas de presión",
+      "Servicio urgente disponible 24 horas",
+    ],
+    closingNote: "Si tienes una avería en El Campello, contacta ahora con Reparaciones Nieto. Soluciones rápidas, económicas y con garantía.",
+  },
+  "san-juan": {
+    intro: [
+      "San Juan de Alicante y la Playa de San Juan forman una de las zonas residenciales de mayor poder adquisitivo de la provincia, con una alta densidad de chalets, adosados y apartamentos de nivel. Las viviendas de esta zona cuentan habitualmente con persianas motorizadas de aluminio térmico y, en muchos casos, con sistemas domóticos que requieren conocimiento técnico específico para su diagnóstico y reparación.",
+      "Reparaciones Nieto trabaja habitualmente en San Juan con intervenciones de motorización, cambio de motores estropeados, programación de mandos y reparación de guías en persianas de gran formato. También atendemos urgencias en cierres de garaje y cierres de seguridad para viviendas unifamiliares.",
+      "La Playa de San Juan concentra además numerosos locales de restauración y comercio que dependen de cierres metálicos en perfecto estado. Para fontanería, la zona tiene infraestructura moderna pero no está exenta de fugas en soleras o problemas de cal en grifería de alta gama.",
+    ],
+    highlights: [
+      "Especialistas en persianas motorizadas y domótica básica",
+      "Reparación y sustitución de motores para persianas de gran formato",
+      "Atención a chalets, adosados y comunidades de San Juan Playa",
+      "Cierres de garaje y sistemas de seguridad para viviendas unifamiliares",
+      "Fontanería discreta para viviendas de alto standing",
+    ],
+    closingNote: "¿Tienes una persiana motorizada averiada o un problema de fontanería en San Juan? Contacta con Reparaciones Nieto para una solución técnica y sin complicaciones.",
+  },
+  "mutxamel": {
+    intro: [
+      "Mutxamel es un municipio del interior del área metropolitana de Alicante, con una tradición residencial arraigada y un parque inmobiliario diverso que incluye tanto viviendas unifamiliares antiguas como urbanizaciones más recientes. Las persianas en Mutxamel suelen ser de aluminio o PVC en viviendas de los años 70 y 80, con mecanismos manuales que acumulan desgaste con el paso del tiempo.",
+      "Reparaciones Nieto atiende Mutxamel con desplazamiento desde Alicante en unos 15 minutos. Realizamos cambios de cintas, reparaciones de ejes, sustitución de lamas y motorización de persianas existentes para darles una segunda vida sin necesidad de cambiar el conjunto completo.",
+      "En fontanería, Mutxamel comparte la problemática del agua dura del área metropolitana de Alicante. Atendemos fugas, atascos, reparaciones de grifería y problemas de calentadores en viviendas unifamiliares y comunidades de la zona.",
+    ],
+    highlights: [
+      "Tiempo de llegada: aproximadamente 15 minutos desde Alicante",
+      "Especialistas en persianas antiguas de aluminio y PVC",
+      "Motorización de persianas manuales sin cambiar el conjunto",
+      "Reparaciones en viviendas unifamiliares y urbanizaciones",
+      "Fontanería general: fugas, atascos y calentadores",
+    ],
+    closingNote: "Reparaciones Nieto está cerca de Mutxamel y listo para resolver tu avería hoy mismo. Llama o escríbenos por WhatsApp.",
+  },
+  "san-vicente-del-raspeig": {
+    intro: [
+      "San Vicente del Raspeig es un municipio que limita directamente con Alicante y alberga la Universidad de Alicante, lo que le da un perfil mixto: vivienda universitaria, residencial consolidada y una zona industrial significativa. Los locales comerciales y negocios de hostelería cerca del campus tienen una alta rotación y necesitan cierres y persianas en perfecto estado para su operativa diaria.",
+      "Reparaciones Nieto llega a San Vicente del Raspeig en 10 a 15 minutos desde Alicante capital. Atendemos reparaciones de persianas en pisos de estudiantes y viviendas familiares, así como cierres metálicos para locales del polígono industrial y la zona comercial junto a la universidad.",
+      "En fontanería, San Vicente tiene una red de distribución moderna pero con la dureza del agua propia de toda la comarca. Resolvemos fugas, atascos, problemas de presión y averías en calentadores con la misma rapidez y garantía que en cualquier otro municipio del área metropolitana.",
+    ],
+    highlights: [
+      "Llegada en 10–15 minutos desde Alicante",
+      "Cierres metálicos para locales comerciales y hostelería universitaria",
+      "Persianas en viviendas residenciales y pisos de alquiler",
+      "Atención al polígono industrial de San Vicente",
+      "Fontanería urgente y programada para particulares y comunidades",
+    ],
+    closingNote: "Si estás en San Vicente del Raspeig y necesitas un persianista o fontanero de confianza, llama a Reparaciones Nieto ahora mismo.",
+  },
+  "santomera": {
+    intro: [
+      "Santomera es un municipio situado en el límite entre las provincias de Alicante y Murcia, con un carácter residencial tranquilo y un parque de viviendas compuesto principalmente por casas unifamiliares y pequeñas comunidades. Por su ubicación, muchos propietarios de Santomera buscan servicios profesionales en la franja alicantina, donde la oferta de empresas de reparación es mayor.",
+      "Reparaciones Nieto cubre Santomera con desplazamiento desde Alicante, resolviendo averías de persianas domésticas, reparaciones de cierres de garaje y trabajos de fontanería en viviendas unifamiliares. El perfil de vivienda en Santomera —con jardín, garaje y persianas de cajón exterior— es el que mejor conocemos y el que más trabajamos en toda la zona.",
+      "Para los propietarios de Santomera que buscan un profesional de confianza sin tener que esperar días para una cita, Reparaciones Nieto ofrece respuesta el mismo día para urgencias y presupuesto sin compromiso para trabajos programados.",
+    ],
+    highlights: [
+      "Cobertura en viviendas unifamiliares y comunidades de Santomera",
+      "Reparación de persianas de cajón exterior y cierres de garaje",
+      "Fontanería en viviendas con jardín: riego, tuberías externas y grifería",
+      "Respuesta el mismo día para urgencias",
+      "Presupuesto sin compromiso para trabajos planificados",
+    ],
+    closingNote: "Reparaciones Nieto también trabaja en Santomera. Si necesitas un persianista o fontanero de confianza, contacta ahora.",
+  },
+  "la-manga": {
+    intro: [
+      "La Manga del Mar Menor es uno de los entornos más exigentes para cualquier instalación metálica o de fontanería. El estrecho cordón litoral entre el Mar Menor y el Mediterráneo concentra miles de apartamentos turísticos expuestos a un ambiente salino extremo que deteriora con rapidez los componentes de aluminio, acero y latón. Las persianas y cierres de locales en La Manga requieren revisiones periódicas para evitar que la oxidación y el salitre bloqueen los mecanismos.",
+      "Reparaciones Nieto se desplaza a La Manga para trabajos de reparación, mantenimiento preventivo y sustitución de componentes dañados. Para propietarios de apartamentos de temporada, ofrecemos revisión de apertura al inicio de la temporada estival: comprobamos el estado de persianas, guías, lamas y mecanismos para que todo funcione desde el primer día.",
+      "En fontanería, La Manga tiene una infraestructura más envejecida que en zonas del interior, con tuberías que acumulan cal y conexiones que se deterioran por el uso estacional. Atendemos fugas, atascos y averías en calentadores con rapidez y con presupuesto claro antes de empezar.",
+    ],
+    highlights: [
+      "Especialistas en persianas y cierres en ambiente de salitre extremo",
+      "Revisión de apertura de temporada para apartamentos vacacionales",
+      "Mantenimiento preventivo para comunidades de La Manga",
+      "Fontanería en instalaciones con desgaste por uso estacional",
+      "Presupuesto previo siempre, sin sorpresas",
+    ],
+    closingNote: "¿Tienes un apartamento en La Manga con una avería o necesitas una revisión antes de la temporada? Llama a Reparaciones Nieto y te lo solucionamos.",
+  },
 };
